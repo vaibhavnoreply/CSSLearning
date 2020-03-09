@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff none repeat scroll 0 0;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#header {
+    height: 72px;
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 997;
+    transition: all 0.5s;
+    left: 0;
+    right: 0;
+}
+
+.clearfix {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 21px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.logo a,
+.logo a:hover {
+    color: #7a6960;
+    text-decoration: none;
+}
+
+div {
+    float: left;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    float: left;
+    color: #4e4039;
+    transition: 0.3s;
+    font-family: "Open Sans", sans-serif;
+    padding: 27px 0px 0px 15px;
+}
+
+li>a:hover,
+li.active>a,
+li li:hover>a {
+    color: #eb5d1e;
+    text-decoration: none;
+}
+
+#about p{
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.f-col-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #282828;
+    z-index: 1010101010;
+}
+
+.f-col-2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #8a939c;
+    z-index: 1010101010;
+}
+
+code {
+    color: brown;
+}

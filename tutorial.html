@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Learner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/tutorial.css">
+</head>
+
+<body>
+    <div class="testGridContainer">
+        <div class="testGridContainer__row">
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+            <div class="testGridContainer__col"></div>
+        </div>
+    </div>
+    <!-- ====== Header ====== -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex">
+            <div class="header__logo mr-auto">
+                <h1 class="header__logo--text"><a href="index.html"><span>CSSLearner</span></a></h1>
+            </div>
+            <nav class="header__nav d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li class="header__nav--dropDown"><a href="">Layouts</a>
+                        <ul>
+                            <li><a href="floats.html" target="_blank">Layouts using floats</a></li>
+                            <li><a href="flex.html" target="_blank">Layouts using flex</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav--dropDown"><a href="">Drop Down</a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ====== End Header ====== -->
+
+    <!-- ====== Hero Section ====== -->
+    <section id="hero" class="align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 hero__heading">
+                    <h1 class="hero__tag">Better digital experience with CSSLearner</h1>
+                    <h4 class="hero__content">We are team of talanted designers making websites with Bootstrap</h4>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero__mobile">
+                        <img class="hero__mobile--img1" src="./assets/img/img3-hero.png" />
+                        <img class="hero__mobile--img2"
+                            src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/source.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== End Hero Section ====== -->
+
+    <!-- ====== Intro Section ====== -->
+    <section id="intro" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 intro--firstDiv">
+                    <div class="intro__heading seprator"><span>Unit Of Measure</span></div>
+                    <p class="intro__description">PX, EM, and REM are primarily used for font sizing, %, VW, and VH are
+                        mostly used for margins, padding, spacing, and widths/heights.</p>
+                    <p>Absolute</p>
+                    <pre
+                        class="intro__pre--description"><b>px:</b> Unit is fixed and does not change based on any other element</pre>
+                    <p>Relative</p>
+                    <pre class="intro__pre--description"><b>em:</b> Relative to the parent element font size, so if you wish to scale the element’s
+                                        size based on its parent’s size, use EM.</pre>
+                    <pre class="intro__pre--description"><b>rem:</b> Relative to the root element (HTML) font size, so if you wish to scale the
+                                        element’s size based on the root size, no matter what the parent size is, use REM
+                                    </pre>
+                    <pre class="intro__pre--description"><b>%:</b> Relative to the parent element. is similar to VW and VH but it is not a length
+                                        that is relative to viewport’s width or height.</pre>
+                    <pre class="intro__pre--description"><b>vw:</b> Relative to the viewport’s width. Vm is useful for creating full width elements
+                                        (100%) that fill up the entire viewport’s width</pre>
+                    <pre class="intro__pre--description"><b>vh:</b> Relative to the viewport’s height. Vh is useful for creating full height
+                                        elements (100%) that fill up the entire viewport’s height.</pre>
+                    <a class="intro__link"
+                        href="https://docs.elementor.com/article/595-difference-between-px-em-rem-percentage-vw-vh">https://docs.elementor.com/article/595-difference-between-px-em-rem-percentage-vw-vh</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro__heading seprator"><span>BEM [Block Element Modifier]</span></div>
+                    <p class="intro__description intro__description--second">It ensures that everyone who participates
+                        in
+                        the development of a website using proper naming
+                        conventions.</p>
+                    <div class="intro__description--second">
+                        <p>Block</p>
+                        <pre class="intro__pre--description--second">
+                                <b>Naming:</b><code>.block</code></br>
+                                <b>HTML:</b><code>&lt;div class="block"&gt;...&lt;/div&gt;</code></br>
+                                <b>CSS:</b><code>.block { color: #042; }</code>
+                        </pre>
+                        <p>Element</p>
+                        <pre class="intro__pre--description--second">
+                                <b>Naming:</b><code>.block__elem</code> </br>
+                                <b>HTML:</b><code>&lt;div class="block"&gt;...&lt;span class="block__elem"&gt; &lt;/span&gt; &lt;/div&gt;</code> </br>
+                                <b>CSS:</b><code>.block__elem { color: #042; }</code>
+                        </pre>
+                        <p>Modifier</p>
+                        <pre class="intro__pre--description--second">
+                                <b>Naming:</b><code>.block--mod or .block__elem--mod</code> </br>
+                                <b>HTML:</b><code>&lt;div class="block block--mod"&gt;...&lt;/div&gt; &lt;div class="block block--size-bigblock--shadow-yes"&gt;...&lt;/div&gt;</code> </br>
+                                <b>CSS:</b><code>.block__elem--mod { }</code>
+                        </pre>
+                        <a class="intro__link" href="http://getbem.com/naming/">http://getbem.com/naming/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== End Intro Section ====== -->
+
+    <!-- ====== End Card Section ====== -->
+    <section id="card">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card__outer">
+                        <div class="card__profile">        
+                            <span class="abc">
+                                    <img class="card__profile--image" src="./assets/img/profile1.png" />
+                            </span>
+                            <h3 class="card__profile--name">Alexander</h3>
+                            <p class="card__profile--title">Javascript Developer</p>
+                            <p class="card__profile--description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Neque
+                                aliquam aliquid porro!</p>
+                        </div>
+                        <div class="card__socialMedia">
+                            <div class="card__socialMedia--icons">
+                                <span class="card__socialMedia--icons--round"><a class="twitter" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="linkedin" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="facebook" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="email" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="github" href=""></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card__outer">
+                        <div class="card__profile">
+                            <span class="abc">
+                                <img class="card__profile--image" src="./assets/img/profile5.png" />
+                            </span>
+                            <h3 class="card__profile--name">Beverly Little</h3>
+                            <p class="card__profile--title">Javascript Developer</p>
+                            <p class="card__profile--description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Neque
+                                aliquam aliquid porro!</p>
+                        </div>
+                        <div class="card__socialMedia">
+                            <div class="card__socialMedia--icons">
+                                <span class="card__socialMedia--icons--round"><a class="twitter" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="linkedin" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="facebook" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="email" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="github" href=""></a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="card__outer">
+                        <div class="card__profile">
+                            <span class="abc">
+                                <img class="card__profile--image" src="./assets/img/profile4.png" />
+                            </span>
+                             <h3 class="card__profile--name">Natalie Portman</h3>
+                            <p class="card__profile--title">Javascript Developer</p>
+                            <p class="card__profile--description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Neque
+                                aliquam aliquid porro!</p>
+                        </div>
+                        <div class="card__socialMedia">
+                            <div class="card__socialMedia--icons">
+                                <span class="card__socialMedia--icons--round"><a class="twitter" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="linkedin" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="facebook" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="email" href=""></a></span>
+                                <span class="card__socialMedia--icons--round"><a class="github" href=""></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== End Card Section ====== -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer__newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer__top--contact">
+                        <h3>CSSLearner</h3>
+                        <p>
+                            31 Adam Street <br>
+                            Koramangla, Banglore 305403<br>
+                            India <br><br>
+                            <strong>Phone:</strong> +91 12345 12434<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__top--links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__top--links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__top--links">
+                        <h4>Our Social Networks</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="footer__top--social-links mt-3">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>CSSLearner</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://vaibhavkumarjain.com/">Vaibhav</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="UTF-8">
+    <title>Nav using floats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/floats.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="clearfix">
+            <div>
+                <h1 class="logo"><a href="index.html"><span>CSSLearner</span></a></h1>
+            </div>
+            <ul>
+                <li class="active"><a href="#home">Nav</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="f-col-1">
+            <p>Floats Nav</p>
+            <pre>
+                <code>
+                    &lt;header id="header"&gt;
+                        &lt;nav class="clearfix"&gt;
+                            &lt;div&gt;
+                                &lt;h1 class="logo"&gt;
+                                    &lt;a href="index.html"&gt;
+                                        &lt;span&gt;CSSLearner&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/h1&gt;
+                            &lt;/div&gt;
+                            &lt;ul&gt;
+                                &lt;li class="active"&gt;
+                                    &lt;a href="#home"&gt;Nav&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#about"&gt;About&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;   
+                </code> 
+            </pre>
+        <hr />
+        <p>Floats Grid</p>
+            <pre>
+                <code>
+                    &lt;section id="about"&gt; 
+                        &lt;div class="f-col-1"&gt; 
+                          ...
+                        &lt;/div&gt; 
+                         &lt;div class="f-col-2"&gt; 
+                          ...
+                        &lt;/div&gt; 
+                    &lt;/section&gt; 
+                </code>
+            </pre>
+        </div>
+        <div class="f-col-2">
+            <p>Floats Nav CSS</p>
+            <pre>
+                <code>
+                    #header {
+                        height: 72px;
+                        background-color: #fff;
+                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                        z-index: 997;
+                        transition: all 0.5s;
+                        position: fixed;
+                        left: 0;
+                        right: 0;
+                    }
+                                
+                    div {
+                        float: left;
+                    }
+                                
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        float: right;
+                    }
+        
+                    ul li {
+                        list-style: none;
+                        display: inline;
+                    }
+                </code> 
+            </pre>
+            <hr />
+            <p>Floats Grid CSS</p>
+            <pre>
+                <code>
+                    .f-col-1 {
+                        position: relative;
+                        width: 50%;
+                        float: left;
+                        height: 100%;
+                        background-color: #282828;
+                        z-index: 1010101010;
+                        height: 700px;
+                    }
+                        
+                    .f-col-2 {
+                        position: relative;
+                        width: 50%;
+                        float: left;
+                        height: 100%;
+                        background-color: #8a939c;
+                        z-index: 1010101010;
+                        height: 700px;
+                    }        
+                </code>    
+            </pre>
+        </div>
+    </section>
+</body>
+
+</html>

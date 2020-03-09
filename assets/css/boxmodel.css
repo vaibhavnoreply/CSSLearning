@@ -1,0 +1,70 @@
+.boxmodel-with-all {
+    background-color: burlywood;
+    border: 10px solid red;
+    margin: 80px;
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.padding-all {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-adv {
+    padding: 20px 10px;
+    /* Vertical  Horizontal */
+}
+
+
+.padding-all-in-one {
+    padding: 20px 0 20px 10px;
+    /* Top  Right  Bottom  Left */
+}
+
+.border {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+
+.margin {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin {
+    margin: 20px 10px;
+    /* Vertical  Horizontal */
+}
+
+.margin {
+    margin: 20px 0 20px 10px;
+    /* Top  Right  Bottom  Left */
+}
+
+.collapse-margin div {
+    margin: 30px 10px;
+    background-color: #ccc;
+}
+
+.collapse-margin p {
+    margin-top: 20px;
+    background-color: #efe;
+}
+
+.collapse-adj>.first-coll {
+    margin: 30px;
+    background-color: red;
+}
+
+.collapse-adj>.second-coll {
+    margin: 30px;
+    background-color: black;
+}
