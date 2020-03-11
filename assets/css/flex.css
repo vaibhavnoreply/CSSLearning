@@ -76,7 +76,6 @@ li li:hover>a {
 }
 
 @media (min-width: 769px) {
-
     .header,
     .mainNav {
         display: flex;

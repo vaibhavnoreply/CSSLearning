@@ -92,7 +92,7 @@ li li:hover>a {
 .f-col-2 {
     position: relative;
     width: 50%;
-    float: left;
+    float: right;
     height: 100%;
     background-color: #8a939c;
     z-index: 1010101010;
