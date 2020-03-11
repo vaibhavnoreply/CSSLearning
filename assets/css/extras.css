@@ -94,6 +94,9 @@ section{
     cursor: default;
     user-select: none;
 }
+.margin-left{
+    margin-left: 30px;
+}
 .card__wrapper {
     width: 340px;
     height: 450px;
@@ -141,4 +144,209 @@ section{
   fa-linkedin,
   fa-twitter {
     background: #46bae2;
+  }
+  .container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* BASIC STYLING FOR ALL BUTTONS */
+  
+  .b1c, .b2c, .b3c {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .b1c {
+    background-color: #2b2b2b;
+  }
+  
+  .b2c {
+    background-color: #ed731c;
+  }
+  
+  .b3c {
+    background-color: #00c0c7;
+  }
+  
+  .button-1-content, .button-2-content, .button-3-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  .button-1, .button-2, .button-3 {
+    padding: 15px 40px;
+    margin: 10px;
+    white-space: nowrap;
+    width: 40%;
+    height: 25px;
+    line-height: 25px;
+    transition: all .3s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+  
+  .button-1:hover {
+    transform: scale(1.1);
+  }
+  
+  .button-1:active {
+    transform: scale(1);
+  }
+  
+  .button-1::after {
+    content: '';
+    position: absolute;
+    background-color: #eb4034;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-1::before {
+    content: '';
+    position: absolute;
+    background-color: #a3251c;
+    opacity: 1;
+    z-index: 1;
+    transition: all .5s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+  }
+  
+  .button-1:hover::before {
+    width: 100%;
+  }
+  /* 
+  ========================
+        BUTTON TWO
+  ========================
+  */
+  .button-2 {
+    overflow: visible;
+  }
+  
+  .button-2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .3);
+  }
+  
+  .button-2:hover::after {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  
+  .button-2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+    z-index: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  
+  .button-2:hover::before {
+    width: 100%;
+  }
+  
+  .button-2 span{
+    letter-spacing: 0px;
+    transition: all .3s;
+  }
+  
+  .button-2:hover span{
+    letter-spacing: 2px;
+  }
+  /* 
+  ========================
+        BUTTON THREE
+  ========================
+  */
+  .button-3 {
+    overflow: visible;
+  }
+  
+  .button-3 span {
+    color: #171717;
+    font-weight: bold;
+  }
+  
+  .button-3::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .4s;
+    border-top: 2px solid #171717;
+    border-bottom: 2px solid #171717;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-3:hover::after {
+    width: 0;
+  }
+  
+  .button-3::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .4s;
+    background-color: #57f9ff;
+    border-right: 2px solid #171717;
+    border-left: 2px solid #171717;
+    width: 100%;
+    height: 0;
+  }
+  
+  .button-3:hover::before {
+    height: 100%;
+  }
+  
+  .button-3 span{
+    letter-spacing: 0px;
+    transition: all .3s;
+  }
+  
+  .button-3:hover span{
+    letter-spacing: 2px;
   }
