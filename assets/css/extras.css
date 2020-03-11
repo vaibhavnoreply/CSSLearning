@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff none repeat scroll 0 0;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    height: 72px;
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 997;
+    transition: all 0.5s;
+}
+
+nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 21px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.logo a,
+.logo a:hover {
+    color: #7a6960;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex
+}
+.mainNav a {
+    text-decoration: none;
+    color: #4e4039;
+    transition: 0.3s;
+    font-family: "Open Sans", sans-serif;
+    padding: 27px 0px 0px 15px;
+    display: block;
+}
+
+li>a:hover,
+li.active>a,
+li li:hover>a {
+    color: #eb5d1e;
+    text-decoration: none;
+}
+section{
+    margin-top: 60px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.head_section{
+    flex-direction: column;
+    align-items: center;
+}
+.head_section > p{
+ margin-top: 30px;
+ font-family: sans-serif;
+}
+.card__wrapper:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+    user-select: none;
+}
+.margin-left{
+    margin-left: 30px;
+}
+.card__wrapper {
+    width: 340px;
+    height: 450px;
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(64, 75, 122, 0.08);
+  }
+  .card__profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .card__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .card__description {
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+  .card__quote {
+    font-size: 12px;
+    position: relative;
+  }
+  .card__quote::before,
+  .card__quote::after {
+    content: open-quote;
+    font-size: 12px;
+    color: grey;
+  }
+  .contact__details {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  fa-facebook,
+  fa-linkedin,
+  fa-twitter {
+    background: #46bae2;
+  }
+  .container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* BASIC STYLING FOR ALL BUTTONS */
+  
+  .b1c, .b2c, .b3c {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .b1c {
+    background-color: #2b2b2b;
+  }
+  
+  .b2c {
+    background-color: #ed731c;
+  }
+  
+  .b3c {
+    background-color: #00c0c7;
+  }
+  
+  .button-1-content, .button-2-content, .button-3-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  .button-1, .button-2, .button-3 {
+    padding: 15px 40px;
+    margin: 10px;
+    white-space: nowrap;
+    width: 40%;
+    height: 25px;
+    line-height: 25px;
+    transition: all .3s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+  
+  .button-1:hover {
+    transform: scale(1.1);
+  }
+  
+  .button-1:active {
+    transform: scale(1);
+  }
+  
+  .button-1::after {
+    content: '';
+    position: absolute;
+    background-color: #eb4034;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-1::before {
+    content: '';
+    position: absolute;
+    background-color: #a3251c;
+    opacity: 1;
+    z-index: 1;
+    transition: all .5s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+  }
+  
+  .button-1:hover::before {
+    width: 100%;
+  }
+  /* 
+  ========================
+        BUTTON TWO
+  ========================
+  */
+  .button-2 {
+    overflow: visible;
+  }
+  
+  .button-2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .3);
+  }
+  
+  .button-2:hover::after {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  
+  .button-2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+    z-index: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  
+  .button-2:hover::before {
+    width: 100%;
+  }
+  
+  .button-2 span{
+    letter-spacing: 0px;
+    transition: all .3s;
+  }
+  
+  .button-2:hover span{
+    letter-spacing: 2px;
+  }
+  /* 
+  ========================
+        BUTTON THREE
+  ========================
+  */
+  .button-3 {
+    overflow: visible;
+  }
+  
+  .button-3 span {
+    color: #171717;
+    font-weight: bold;
+  }
+  
+  .button-3::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .4s;
+    border-top: 2px solid #171717;
+    border-bottom: 2px solid #171717;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-3:hover::after {
+    width: 0;
+  }
+  
+  .button-3::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all .4s;
+    background-color: #57f9ff;
+    border-right: 2px solid #171717;
+    border-left: 2px solid #171717;
+    width: 100%;
+    height: 0;
+  }
+  
+  .button-3:hover::before {
+    height: 100%;
+  }
+  
+  .button-3 span{
+    letter-spacing: 0px;
+    transition: all .3s;
+  }
+  
+  .button-3:hover span{
+    letter-spacing: 2px;
+  }
